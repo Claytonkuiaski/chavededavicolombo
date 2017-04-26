@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'dolphin';
+    src: url('../fonts/dolphin-webfont.woff2') format('woff2'),
+         url('../fonts/dolphin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
