@@ -1,0 +1,68 @@
+footer
+	.rodape
+		height: 480px
+		background-color: $azul-escuro
+		border-top: solid 5px $mostarda
+		+breakpoint($tablet)
+			height: 530px
+		+breakpoint($celubot)
+			height: 800px	
+		.rodape1
+			+make-sm-column(4)
+			margin-top: 30px
+			+breakpoint($celubot)
+				text-align: center
+			h2 
+				white-space: nowrap
+				font-family: Open sans
+				color: $branco
+				margin-bottom: 40px
+				+breakpoint($celubot)
+					margin-top: 100px
+		.rodape2
+			font-family: Open sans
+			+make-sm-column(6)
+			+make-sm-column-offset(2)
+			+breakpoint($celubot)
+				text-align: center
+			img 
+				float: right
+				width: 150px
+				margin-top: -80px
+				+breakpoint($celubot)
+					+img-responsive
+					float: none
+					margin: 0 auto
+					margin-top: -420px
+			h2 
+				margin-top: 160px
+				font-size: 20px
+				color: $branco
+				+breakpoint($tablet)
+					margin-top: 140px
+				+breakpoint($celubot)
+					margin-top: 400px
+			h3
+				margin: 0
+				margin-bottom: 10px
+				font-size: 15px
+				color: $branco		
+			h4 
+				text-align: center
+				float: right
+				margin-top: 140px
+				font-size: 15px	
+				color: $mostarda
+				+breakpoint($celubot)
+					float: none
+				a 
+					text-decoration: none
+					color: $mostarda
+					font-style: italic
+					+transition(.2s)
+					&:hover
+						color: $branco
+
+
+
+

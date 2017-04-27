@@ -1,72 +1,172 @@
-.conteudo-home
-	.slide
-		+make-sm-column(8)
-		margin-top: 20px
-		#owl-demo
-			img
-				+img-responsive
-				width: 800px
-		+breakpoint($tablet)
-			+make-sm-column(12)		
-	.palavra
-		+make-sm-column(4)	
-		img 
-			width: 80px
-			float: right
-			margin-top: 10px
+main
+	.conteudo-home
+		font-family: Open sans
+		hr 
+		    height: 12px
+		    border: 0
+		    box-shadow: inset 0 10px 15px -15px rgba(0, 0, 0, 0.5)
+		.slide
+			+make-sm-column(8)
+			margin-top: 20px
+			#owl-demo
+				img
+					+img-responsive
+					width: 800px
 			+breakpoint($tablet)
-				+img-responsive
+				+make-sm-column(12)		
+		.palavra
+			+make-sm-column(4)	
+			img 
 				width: 100px
-				margin: 0 auto
-				margin-top: 10px
-				float: none	
-		h3 
-			color: $preto
-		h2 
-			margin-top: 0
-			color: $azul-escuro
-		h6 
-			margin-top: 30px
-			color: $preto		
-		h5 
-			margin-bottom: 30px	
-		+breakpoint($tablet)
-			+make-sm-column(12)
-		h2,h3,h4,h5,h6 
-			+breakpoint($tablet)
-				text-align: center		
-
-	.botaoleia		
-		a 
-			margin-left: 8px
-			color: $azul-claro
-			font-weight: bold
+				float: right
+				margin-top: 70px
+				+breakpoint($tablet)
+					+img-responsive
+					width: 150px
+					margin: 0 auto
+					margin-top: 60px
+					float: none	
+			h3 
+				color: $preto
+			h2 
+				margin-top: 0
+				color: $azul-escuro
+			h6 
+				margin-top: 30px
+				color: $preto		
+			h5 
+				margin-bottom: 30px	
 			+breakpoint($tablet)
 				+make-sm-column(12)
+			h2,h3,h4,h5,h6,a 
+				+breakpoint($tablet)
+					text-align: center		
+		
+			a 
+				margin-top: 50px
+				color: $mostarda
+				background-color: $azul-escuro
+				text-decoration: none
+				padding-left: 20px
+				padding-right: 20px
+				padding-top: 5px
+				padding-bottom: 5px
+				border-radius: 10px
 				text-align: center
-			+breakpoint($celubot)
-				+make-sm-column(12)
-				text-align: center	
-	.banner1, 
-	.banner2 
-		+make-sm-column(6)	
-		margin-top: 20px
-		a 
-			img 
-				+img-responsive
-				border-top-left-radius: 15px
-				border-top-right-radius: 120px 30px
-				border-bottom-left-radius: 120px 30px
-				border-bottom-right-radius: 15px
-				-webkit-transition: all 0.7s ease
-				transition: all 0.7s ease
+				+transition(.2s)
 				&:hover
-					border-top-left-radius: 30px 120px
-					border-bottom-right-radius: 30px 120px
-					border-bottom-left-radius: 15px 
-					border-top-right-radius: 15px
-		+breakpoint($tablet)
-			+make-sm-column(12)		
+					margin-left: 10px
+					color: $branco
+					
+		.banner1, 
+		.banner2 
+			+make-sm-column(6)	
+			margin-top: 20px
+			a 
+				img 
+					+img-responsive
+					border-top-left-radius: 15px
+					border-top-right-radius: 120px 30px
+					border-bottom-left-radius: 120px 30px
+					border-bottom-right-radius: 15px
+					-webkit-transition: all 0.7s ease
+					transition: all 0.7s ease
+					&:hover
+						border-top-left-radius: 30px 120px
+						border-bottom-right-radius: 30px 120px
+						border-bottom-left-radius: 15px 
+						border-top-right-radius: 15px
+			+breakpoint($tablet)
+				+make-sm-column(12)		
+				img 
+					+img-responsive
+					margin: 0 auto	
+		.ultimas-noticias
+			+make-sm-column(12)
+			+breakpoint($celubot)
+				text-align: center
+			margin-top: 50px
+			.noticia-1,
+			.noticia-2,
+			.noticia-3,
+			.noticia-4		
+				+make-sm-column(6)
+				text-align: left
+				padding-top: 30px
+				padding-bottom: 30px
+				+breakpoint($tablet)
+					text-align: center
+				+breakpoint($celubot)
+					padding-top: 50px
+					padding-bottom: 50px
+				img 
+					float: left
+					width: 200px
+					padding-right: 10px
+					+breakpoint($tablet)
+						+img-responsive
+						margin: 0 auto
+						float: none
+						width: 250px
+					+breakpoint($celubot)
+						width: 300px	
+						padding: 0					
+				h3 
+					color: $azul-escuro
+					margin-top: 30px	
+				h5 
+					margin-top: 30px
+					margin-bottom: 90px
+					a 
+						color: $mostarda
+						background-color: $azul-escuro
+						text-decoration: none
+						padding-left: 20px
+						padding-right: 20px
+						padding-top: 5px
+						padding-bottom: 5px
+						border-radius: 10px
+						text-align: center
+						+transition(.2s)
+						&:hover
+							margin-left: 10px
+							background-color: $azul-claro
+							color: $branco
+							border: none	
+				h3,
+				h4,
+				h5 
+					padding-left: 40px
+					padding-right: 40px	
+		.reunioes
+			+make-sm-column(12)	
+			+breakpoint($celubot)
+				text-align: center
 			img 
-				+img-responsive
-				margin: 0 auto	
+				width: 240px
+				float: right
+				margin-top: -350px
+				+breakpoint($celubot)
+					+img-responsive
+					float: none
+					margin: 0 auto
+					margin-top: -120px
+					margin-bottom: 150px
+					width: 220px
+			h3
+				.familia
+					margin-top: 20px
+				font-family: Open sans
+				color: $preto
+				i 
+					color: $azul-escuro
+			.hrfinal	
+				margin-bottom: 150px
+				margin-top: 50px
+		
+
+			
+					
+				
+						
+			

@@ -6,14 +6,14 @@ header
 		repeat: no-repeat
 		position: top center
 		size: cover
-
+	border-bottom: solid 5px $mostarda	
 	.contato-header
 		margin-top: 40px
 		text-align: right
 		+breakpoint($tablet)
 			+make-sm-column(12)
 			text-align: center
-			margin-top: 0px
+			margin-top: 30px
 			margin-bottom: 20px
 		i
 			color: $azul-escuro
@@ -49,19 +49,18 @@ header
 		+breakpoint($tablet)
 			display: none
 		ul
+			float: right
 			margin-top: 40px
-			display: flex
+			white-space: nowrap
 			li
 				display: inline
 				padding-top: 10px
 				padding-bottom: 10px
-				padding-left: 15px
-				padding-right: 15px
-				background-color: $azul-claro
+				background-color: $azul-escuro
 				+transition(.2s)
 				&:hover
-					background-color: $azul-escuro
-					border-bottom: solid 2px $vermelho
+					background-color: $azul-claro
+					border-bottom: solid 7px $mostarda
 					opacity: 1
 					padding-bottom: 10px
 				a
@@ -71,27 +70,31 @@ header
 					padding-top: 10px
 					padding-right: 20px
 					padding-left: 20px
-					padding-bottom: 10px				
+					padding-bottom: 10px
+					+transition(.2s)
+					&:hover
+						color: $mostarda				
 			.contato 
 				border-radius: 0 20px 0 0
 			.menu-home
 				border-radius: 0 0 0 20px				
 	.chave-colombo
 		h1 
-			font-style: italic	
+			font-family: Dolphin
 			color: $azul-escuro
-			margin-top: 220px
-			font-size: 30px
+			text-shadow: 2px 2px 1px $mostarda
+			margin-top: 180px
+			font-size: 50px
 			+breakpoint($tablet)
 				+make-sm-column(12)	
 				text-align: center
 				margin-top: 10px		
 	.data 
 		text-align: right
-		margin-top: -35px
+		margin-top: 0px
 		i 
 			color: $azul-escuro
-			a 
+			span 
 				padding: 5px
 				text-decoration: none
 				color: $azul-escuro
@@ -100,69 +103,64 @@ header
 			+make-sm-column(12)
 			text-align: center
 			margin-top: 0px		
-	#btn-menu
+			margin-bottom: 20px
+.toggle
+	margin-top: 30px
+	position: relative
+	float: right
+	text-decoration: none
+	a 
+		text-decoration: none
 		display: none
-	label
-		display: none
-		padding-top: 0px
-		color: $azul-escuro
+		color: $azul-claro
 		font-size: 50px
-		margin-top: 0px
-		margin-left: 25px
-		width: 40px
-		height: 45px
+		margin-top: -300px
 		+transition(.2s)
 		&:hover
-			cursor: pointer
+			color: $azul-escuro
 		+breakpoint($tablet)
 			display: block
-			margin-top: 0px		
-	.responsivo
-		+breakpoint($tablet)
-			display: flex
-			margin-top: 20px
-		ul 
-			position: fixed
-			list-style: none
-			display: none
-			background-color: $azul-claro
-			+breakpoint($tablet)
+		+breakpoint($celubot)
+			margin-top: -300px
+		+breakpoint($celular)
+			margin-top: -190px
+			font-size: 30px		
+.menu-responsivo
+	z-index: 99999
+	position: fixed
+	width: 100%
+	height: 0
+	left: 0
+	top: -280px
+	+transition(.2s)
+	&.ativo 
+		top: 0
+	
+	ul 
+		margin-top: 0px
+		margin-left: -50px
+		list-style: none
+		text-align: center
+		background-color: $azul-claro
+		li 
+			a
+				font-size: 25px
+				padding: 10px
 				display: block
-				flex-direction: column
-				margin-left: -1560px
-			li 
-				margin: 0px
-				border-top: solid 1px $branco
+				color: $branco
+				border-bottom: solid 1px $branco
 				+transition(.2s)
-				&:hover
-					background-color: $azul-escuro
-				a 
-					padding: 9px
-					padding-right: 770px
-					padding-left: 40px
-					display: block
-					color: $branco	
+				&:hover,
+				&:focus
 					text-decoration: none
-					font-size: 35px
-					+breakpoint($celubot)
-						padding-right: 540px
-		+breakpoint($tablet)
-			position: relative
-			z-index: 5
-			width: 80%	
-			transition: all .3s
-	.fechar
-		display: none
+					background-color: $azul-escuro
+					border-bottom: solid 1px $mostarda
+					color: $mostarda
 
-
-#btn-menu
-	&:checked ~
-		.fechar
-			display: block
-		.abrir
-			display: none	
-		.responsivo
-			margin-left: 1520px	
-			
-
+.layout
+	+transition(.2s)
+	&.ativo 
+		padding-top: 280px
 		
+
+	

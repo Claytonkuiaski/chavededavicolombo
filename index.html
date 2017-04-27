@@ -5,86 +5,134 @@
 	<title>Chave de Davi Colombo</title>
 	<link rel="stylesheet" href="css/geral.css">
 	<link rel="stylesheet" href="css/plugins.css">
-  <link rel="stylesheet" href="css.fonts.css">
+  <link rel="stylesheet" href="css/fonts.css">
   <script src="js/script.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
-	<header>
-    <input type="checkbox" id="btn-menu">
-    <div class="abrir">
-      <label for="btn-menu"><i class="fa fa-bars" aria-hidden="true"></i></label>
-    </div>
-    <div class="fechar">
-      <label for="btn-menu"><i class="fa fa-times" aria-hidden="true"></i></label>
-    </div>
-    <div class="responsivo">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">História</a></li>
-        <li><a href="#">Fotos</a></li>
-        <li><a href="#">Localização</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </div>
-    <div class="container">
-      <div class="contato-header">
-        <i class="fa fa-envelope" aria-hidden="true"><a>E-mail: chavededavi@hotmail.com</a></i>
-        <i class="fa fa-phone-square" aria-hidden="true"><a>Telefone: (41) 3333-1234</a></i>
-      </div>
+  <div class="menu-responsivo">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">História</a></li>
+      <li><a href="">Mídia</a></li>
+      <li><a href="">Localização</a></li>
+      <li><a href="">Contato</a></li>
+    </ul>
+  </div>
+  <div class="layout">
+  	<header>
+      <div class="container">
+        <div class="contato-header">
+          <i class="fa fa-envelope" aria-hidden="true"><a>E-mail: contato@chavededavicolombo.com.br</a></i>
+          <i class="fa fa-phone-square" aria-hidden="true"><a>Telefone: (41) 3333-1234</a></i>
+        </div>
 
-      <div class="logo"><img src="images/chave.png" alt=""></div>
-   
-      <div class="menu">
-        <ul>
-          <li class="menu-home"><a href="#">Home</a></li>
-          <li><a href="">História</a></li>
-          <li><a href="">Fotos</a></li>
-          <li><a href="">Localização</a></li>
-          <li class="contato"><a href="">Contato</a></li>
-        </ul>
+        <div class="logo"><img src="images/chave.png" alt=""></div>
+     
+        <div class="menu">
+          <ul>
+            <li class="menu-home"><a href="#">Home</a></li>
+            <li><a href="">História</a></li>
+            <li><a href="">Mídia</a></li>
+            <li><a href="">Localização</a></li>
+            <li class="contato"><a href="">Contato</a></li>
+          </ul>
+        </div>
+        <div class="toggle">
+          <a href="#"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="chave-colombo">
+          <h1>Chave de Davi Colombo</h1>
+        </div>
+        <div class="data">
+         <i class="fa fa-calendar" aria-hidden="true"><span><script> EscreveData(); </script><span/></i> 
+        </div>
       </div>
-      <div class="chave-colombo">
-        <h1>Chave de Davi Colombo</h1>
-      </div>
-      <div class="data">
-        <i class="fa fa-calendar" aria-hidden="true"><a><script>EscreveData(); </script><a/></i>
-      </div>
-    </div>
-	</header>
-  
-  <div>
-    <div class="container">
-      <div class="conteudo-home">
-        <div class="slide">
-          <div id="owl-demo" class="owl-carousel owl-theme">
-            <div class="item"><img src="images/adoracao.jpg" alt="adoracao"></div>
-            <div class="item"><img src="images/integracao.jpg" alt="integracao"></div>
-            <div class="item"><img src="images/levitas.jpg" alt="levitas"></div>
+  	</header>
+    
+    <main>
+      <div class="container">
+        <div class="conteudo-home">
+          <div class="slide">
+            <div id="owl-demo" class="owl-carousel owl-theme">
+              <div class="item"><img src="images/adoracao.jpg" alt="adoracao"></div>
+              <div class="item"><img src="images/integracao.jpg" alt="integracao"></div>
+              <div class="item"><img src="images/levitas.jpg" alt="levitas"></div>
+            </div>
           </div>
-        </div>
-        <div class="palavra">
-          <img src="images/deja.png" alt="">
-          <h3>Palavra do Pastor</h3>
-          <h2>Dejair Gomes</h2>
-          <h6>Título da Mensagem</h6>
-          <h5>AQUI VAI O NOME</h5>
-        </div>
+          <div class="palavra">
+            <img src="images/deja.png" alt="">
+            <h3>Palavra do Pastor</h3>
+            <h2>Dejair Gomes</h2>
+            <h6>Título da Mensagem</h6>
+            <h5>AQUI VAI O NOME</h5>            
+            <h5><a href="#">Mais...</a></h5>            
+          </div>
 
-        <div class="botaoleia">
-          <a href="#">Leia</a>
-        </div>
-        
-        <div class="banner1">
-          <a href=""><img src="images/banner1.jpg" alt=""></a>
-        </div>
-        <div class="banner2">
-          <a href=""><img src="images/banner2.jpg" alt=""></a>
-        </div>
+          <div class="banner1">
+            <a href=""><img src="images/banner1.jpg" alt=""></a>
+          </div>
+          <div class="banner2">
+            <a href=""><img src="images/banner2.jpg" alt=""></a>
+          </div>
 
-
+          <div class="ultimas-noticias">
+            <h2><i class="fa fa-newspaper-o" aria-hidden="true"></i> Ultimas Notícias</h2><hr>
+            <div class="noticia-1">
+              <img src="images/chave.png" alt="">
+              <h3>Seminário Sim Amém</h3>
+              <h4>Não perca, será muito edificante pra sua vida</h4>
+              <h5><a href="#">Mais...</a></h5><hr>            
+            </div>
+            <div class="noticia-2">
+              <img src="images/chave.png" alt="">
+              <h3>Seminário Sim Amém</h3>
+              <h4>Não perca, será muito edificante pra sua vida</h4>
+              <h5><a href="#">Mais...</a></h5><hr>
+            </div>
+            <div class="noticia-3">
+              <img src="images/chave.png" alt="">
+              <h3>Seminário Sim Amém</h3>
+              <h4>Não perca, será muito edificante pra sua vida</h4>
+              <h5><a href="#">Mais...</a></h5><hr>
+            </div>
+            <div class="noticia-4">
+              <img src="images/chave.png" alt="">
+              <h3>Seminário Sim Amém</h3>
+              <h4>Não perca, será muito edificante pra sua vida</h4>  
+              <h5><a href="#">Mais...</a></h5><hr>                          
+            </div>
+          </div>
+          <div class="reunioes">
+              <h2><i class="fa fa-users" aria-hidden="true"></i> Reuniões</h2><hr>
+              <h3><i class="fa fa-calendar familia" aria-hidden="true"></i> Domingo - Culto da Família - 18h</h3>
+              <h3><i class="fa fa-calendar" aria-hidden="true"></i> Quarta-Feira - Oração - 19:30h</h3>
+              <h3><i class="fa fa-calendar" aria-hidden="true"></i> Sábado - Culto de Jovens - 19:30h</h3><hr class="hrfinal">
+              <img src="images/biblia.png" alt="">
+          </div>
+        </div> 
       </div>
-    </div>
+      
+    </main>
+
+    <footer>
+      <div class="rodape">
+        <div class="container">
+          <div class="rodape1">
+            <h2><i class="fa fa-facebook-square" aria-hidden="true"></i> Siga-nos no Facebook</h2>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FdeveloperClayton%2F&tabs&width=340&height=154&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          </div>
+          <div class="rodape2">
+            <img src="images/chave.png" alt="">
+            <h2>Comunidade Cristã Chave de Davi Colombo</h2>
+            <h3>Rua Gustavo Nass, 38<br>Roça Grande - Colombo - PR</h3>
+            <h3><i class="fa fa-envelope" aria-hidden="true"></i> E-mail: contato@chavededavicolombo.com.br</h3>
+            <h3><i class="fa fa-phone-square" aria-hidden="true"></i> Telefone: (41) 3333-1234</h3> 
+            <h4>&copy;2017 Chave de Davi Colombo. Todos os direitos reservados. <br>Desenvolvido por <a href="">Friendship</a></h4>     
+          </div>
+        </div>       
+      </div>
+    </footer>
   </div>
 
 
@@ -93,12 +141,18 @@
 
 
 
-
-
-
-
-
-  <footer>footer</footer>
+      <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script>
+      $(function(){       
+        $('.toggle').click(function(){
+          $('.layout').toggleClass('ativo');
+          $('.menu-responsivo').toggleClass('ativo');
+          $(this).toggleClass('ativo');
+        });
+        new WOW().init();
+      });
+    </script>
 	<script>$(document).ready(function() {
  
   $("#owl-demo").owlCarousel({
