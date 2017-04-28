@@ -4,32 +4,34 @@ footer
 		background-color: $azul-escuro
 		border-top: solid 5px $mostarda
 		+breakpoint($tablet)
-			height: 530px
-		+breakpoint($celubot)
-			height: 800px	
+			height: 880px	
 		.rodape1
 			+make-sm-column(4)
 			margin-top: 30px
-			+breakpoint($celubot)
+			+breakpoint($tablet)
+				+make-sm-column(12)
 				text-align: center
 			h2 
 				white-space: nowrap
 				font-family: Open sans
 				color: $branco
 				margin-bottom: 40px
-				+breakpoint($celubot)
-					margin-top: 100px
+				+breakpoint($tablet)
+					margin-top: 80px
+					font-size: 35px
 		.rodape2
 			font-family: Open sans
 			+make-sm-column(6)
 			+make-sm-column-offset(2)
-			+breakpoint($celubot)
+			+breakpoint($tablet)
+				+make-sm-column(12)
+				+make-sm-column-offset(0)
 				text-align: center
 			img 
 				float: right
 				width: 150px
 				margin-top: -80px
-				+breakpoint($celubot)
+				+breakpoint($tablet)
 					+img-responsive
 					float: none
 					margin: 0 auto
@@ -39,22 +41,25 @@ footer
 				font-size: 20px
 				color: $branco
 				+breakpoint($tablet)
-					margin-top: 140px
-				+breakpoint($celubot)
 					margin-top: 400px
+					margin-bottom: 20px
+					font-size: 35px
 			h3
 				margin: 0
 				margin-bottom: 10px
 				font-size: 15px
-				color: $branco		
+				color: $branco	
+				+breakpoint($tablet)
+					font-size: 20px	
 			h4 
 				text-align: center
 				float: right
 				margin-top: 140px
 				font-size: 15px	
 				color: $mostarda
-				+breakpoint($celubot)
+				+breakpoint($tablet)
 					float: none
+					font-size: 17px
 				a 
 					text-decoration: none
 					color: $mostarda

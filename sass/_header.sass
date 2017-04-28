@@ -24,9 +24,9 @@ header
 			padding-left: 10px	
 			padding-right: 10px
 			font-size: 15px
-		+breakpoint($celubot)
+		+breakpoint($tablet)
 			i,a 
-				font-size: 20px
+				font-size: 28px
 
 				
 	.logo
@@ -87,8 +87,10 @@ header
 			font-size: 50px
 			+breakpoint($tablet)
 				+make-sm-column(12)	
+				font-size: 60px
 				text-align: center
-				margin-top: 10px		
+				margin-top: 10px	
+				margin-bottom: 40px	
 	.data 
 		text-align: right
 		margin-top: 0px
@@ -101,6 +103,7 @@ header
 				font-weight: bold
 		+breakpoint($tablet)
 			+make-sm-column(12)
+			font-size: 20px
 			text-align: center
 			margin-top: 0px		
 			margin-bottom: 20px
@@ -113,7 +116,7 @@ header
 		text-decoration: none
 		display: none
 		color: $azul-claro
-		font-size: 50px
+		font-size: 60px
 		margin-top: -300px
 		+transition(.2s)
 		&:hover
@@ -131,7 +134,7 @@ header
 	width: 100%
 	height: 0
 	left: 0
-	top: -280px
+	top: -390px
 	+transition(.2s)
 	&.ativo 
 		top: 0
@@ -144,7 +147,7 @@ header
 		background-color: $azul-claro
 		li 
 			a
-				font-size: 25px
+				font-size: 40px
 				padding: 10px
 				display: block
 				color: $branco
@@ -160,7 +163,7 @@ header
 .layout
 	+transition(.2s)
 	&.ativo 
-		padding-top: 280px
+		padding-top: 390px
 		
 
 	
