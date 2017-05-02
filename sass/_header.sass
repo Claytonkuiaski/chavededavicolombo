@@ -19,14 +19,18 @@ header
 			color: $azul-escuro
 			font-size: 18px
 		a 
-			color: $azul-escuro
+			color: $preto
 			text-decoration: none
 			padding-left: 10px	
 			padding-right: 10px
-			font-size: 15px
+			font-size: 17px
 		+breakpoint($tablet)
 			i,a 
 				font-size: 28px
+				margin-right: 50px
+		+breakpoint($celular)
+			a,i  
+				display: none
 
 				
 	.logo
@@ -65,7 +69,7 @@ header
 					padding-bottom: 10px
 				a
 					text-decoration: none
-					font-size: 20px
+					font-size: 15px
 					color: $branco 
 					padding-top: 10px
 					padding-right: 20px
@@ -95,11 +99,11 @@ header
 		text-align: right
 		margin-top: 0px
 		i 
-			color: $azul-escuro
+			color: $preto
 			span 
 				padding: 5px
 				text-decoration: none
-				color: $azul-escuro
+				color: $preto
 				font-weight: bold
 		+breakpoint($tablet)
 			+make-sm-column(12)
@@ -115,26 +119,25 @@ header
 	a 
 		text-decoration: none
 		display: none
-		color: $azul-claro
+		color: $preto
 		font-size: 60px
-		margin-top: -300px
+		margin-top: -425px
 		+transition(.2s)
 		&:hover
 			color: $azul-escuro
 		+breakpoint($tablet)
 			display: block
 		+breakpoint($celubot)
-			margin-top: -300px
+			
 		+breakpoint($celular)
-			margin-top: -190px
-			font-size: 30px		
+			margin-top: -380px	
 .menu-responsivo
 	z-index: 99999
 	position: fixed
 	width: 100%
 	height: 0
 	left: 0
-	top: -390px
+	top: -470px
 	+transition(.2s)
 	&.ativo 
 		top: 0
@@ -163,7 +166,7 @@ header
 .layout
 	+transition(.2s)
 	&.ativo 
-		padding-top: 390px
+		padding-top: 470px
 		
 
 	
