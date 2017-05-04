@@ -5,9 +5,9 @@ $GetPost = filter_input_array(INPUT_POST,FILTER_DEFAULT);
 
 //Variáveis locais
 $Erro     = true;
-$Nome     = $GetPost['nome'];
-//$Email    = $GetPost['email'];
-$Mensagem = $GetPost['mensagem'];
+//$Nome     = $GetPost['nome'];
+$Email    = $GetPost['email'];
+//$Mensagem = $GetPost['mensagem'];
 
 //Incluir a classe PHPMailer
 include_once 'PHPMailer/class.smtp.php';
@@ -24,12 +24,12 @@ $Mailer->Username = "contato@chavededavicolombo.com.br";
 $Mailer->Password = "keycolombo";
 $Mailer->SMTPSecure = "ssl";
 $Mailer->Port = 465;
-$Mailer->FronName = "{$Nome}";
+$Mailer->FronName = "";
 $Mailer->Fron = "contato@chavededavicolombo.com.br";
 $Mailer->AddAddress("contato@chavededavicolombo.com.br");
 $Mailer->IsHTML(true);
-$Mailer->Subject = "Oração via Site";
-$Mailer->Body = "{$Mensagem},<br><br>Nome da pessoa: {$Nome}";
+$Mailer->Subject = "Cadastro de e-mail para notícias";
+$Mailer->Body = "E-mail: {$Email}";
 
 //Verificação
 $enviado = $Mailer->Send();

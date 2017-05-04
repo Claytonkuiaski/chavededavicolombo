@@ -6,7 +6,8 @@ $GetPost = filter_input_array(INPUT_POST,FILTER_DEFAULT);
 //Variáveis locais
 $Erro     = true;
 $Nome     = $GetPost['nome'];
-//$Email    = $GetPost['email'];
+$Email    = $GetPost['email'];
+$Fone    = $GetPost['fone'];
 $Mensagem = $GetPost['mensagem'];
 
 //Incluir a classe PHPMailer
@@ -28,8 +29,8 @@ $Mailer->FronName = "{$Nome}";
 $Mailer->Fron = "contato@chavededavicolombo.com.br";
 $Mailer->AddAddress("contato@chavededavicolombo.com.br");
 $Mailer->IsHTML(true);
-$Mailer->Subject = "Oração via Site";
-$Mailer->Body = "{$Mensagem},<br><br>Nome da pessoa: {$Nome}";
+$Mailer->Subject = "Cadastro - Página de contato";
+$Mailer->Body = "{$Mensagem}<br><br>Nome: {$Nome}<br>E-mail: {$Email}<br>Telefone: {$Fone}";
 
 //Verificação
 $enviado = $Mailer->Send();

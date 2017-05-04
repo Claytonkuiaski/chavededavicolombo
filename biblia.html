@@ -56,29 +56,7 @@
       <div class="container">
         <div class="biblia">
           <img src="images/biblia.png" alt="biblia">
-          <div id="iGugaBibleContainer"><a href="http://www.iguga.org">http://www.iguga.org</a></div>
-<script type="text/javascript" src="http://www.iguga.org/js/igpostmessage.js"></script>
-<script type="text/javascript">
-/*<![CDATA[*/
-    window.onload = function()
-    {
-        /* Link da Bíblia Online iGuga Personalizada */
-        strBibleCustomLink = 'http://www.iguga.org/bible/searchFrame/ID/1612dca508867f6102edca7d9175281a';
-          
-        strSource = strBibleCustomLink + '?fromUrl=' + encodeURIComponent(document.location.href);
-     
-        document.getElementById("iGugaBibleContainer").innerHTML = '<iframe id="iGugaBibleFrame" src="' + strSource + '" style="height: 1000px; width: 100%;" scrolling="no" frameborder="0" allowtransparency="true"></iframe>';
-    }
-    igPostMessage.receiveMessage(function(event)
-    {
-        if ((!isNaN(event.data)) && (event.data > 0))
-        {
-            document.getElementById("iGugaBibleFrame").style.height = '100%';
-            document.getElementById("iGugaBibleContainer").style.height = event.data + 'px';
-        }
-    }, '');
-/*]]>*/
-</script>
+          <h2>Em Breve</h2>
         </div>    
       </div>  
     </main>
