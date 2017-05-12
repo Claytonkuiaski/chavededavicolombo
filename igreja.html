@@ -16,7 +16,7 @@
       <li><a href="historia.html">História</a></li>
       <li><a href="igreja.html">a Igreja</a></li>
       <li><a href="oracao.html">Pedido de Oração</a></li>
-      <li><a href="biblia.html">Biblia</a></li>
+      <li><a href="login.php">Área de Líderes</a></li>
       <li><a href="contato.html">Contato</a></li>
     </ul>
   </div>
@@ -36,7 +36,7 @@
             <li><a href="historia.html">História</a></li>
             <li><a href="igreja.html">a Igreja</a></li>
             <li><a href="oracao.html">Pedido de Oração</a></li>
-            <li><a href="biblia.html">Biblia</a></li>
+            <li><a href="login.php">Área de Líderes</a></li>
             <li class="contato"><a href="contato.html">Contato</a></li>
           </ul>
         </div>
@@ -54,7 +54,98 @@
     
     <main>
       <div class="container">
-        
+        <div class="igreja-geral">
+          <hr><h3><i class="fa fa-cogs" aria-hidden="true"></i> Ministérios</h3><hr>
+          <div id="box-toggle">
+            <aside class="sidebar">
+              <h2>Notícias</h2>
+              <div>
+                <p>Carreata pra Jesus, venha participar, será um "esquenta" para a MARCHA PRA JESUS! <a href="images/carreata.jpg"> <p>Ver...</p></a></p><br><br>
+
+                <p>AULAS DE CANTO INFANTIL E ADULTO, maiores informações com Elaine Kuiaski<p><a href="contato.html">Entre em contato</a></p></p><br><br>
+
+                <p>QUER FAZER PARTE DA FAMÍLIA CHAVE DE DAVI? Fale com Luiz e tire todas as suas dúvidas sobre a igreja e seus princípios.<p><a href="contato.html">Entre em contato</a></p>
+
+              </div>
+            </aside>
+            <div class="ministerios">
+              <div class="louvor">
+                <hr><h2>Ministério de Louvor</h2>
+                <div class="tgl">
+                  <p>Gostaria de fazer parte desse ministério? Venha e fale conosco. Deixe Deus te usar pra alcançar pessoas através da musica e dança.</p>
+                  <div class="fotos1">
+                    <img src="images/foto-louvor-1.jpg" alt="">  
+                    <img src="images/foto-louvor-2.jpg" alt="">
+                  </div>
+                  <div class="fotos2">  
+                    <img src="images/foto-louvor-3.jpg" alt="">
+                    <img src="images/foto-louvor-4.jpg" alt="">
+                  </div>
+                  <div class="fotos3">
+                    <img src="images/foto-louvor-5.jpg" alt="">
+                    <img src="images/foto-louvor-6.jpg" alt="">
+                  </div> 
+                  <a href="galeria-louvor.html">Fotos</a>  
+                </div>
+              </div>
+          
+              
+
+              <div class="louvor">
+                <hr><h2>Ministério Infantil</h2>
+                <div class="tgl">
+                  <p>E disse: Em verdade vos digo que, se não vos converterdes e não vos fizerdes como crianças, de modo algum entrareis no reino dos céus.
+                    MATEUS 18:3</p>
+                  <div class="fotos1">
+                    <img src="images/foto-infantil-1.jpg" alt="">  
+                    <img src="images/foto-infantil-2.jpg" alt="">
+                  </div>
+                  <div class="fotos2">  
+                    <img src="images/foto-infantil-3.jpg" alt="">
+                    <img src="images/foto-infantil-4.jpg" alt="">
+                  </div>
+                  <div class="fotos3">
+                    <img src="images/foto-infantil-5.jpg" alt="">
+                    <img src="images/foto-infantil-6.jpg" alt="">
+                  </div> 
+                  <a href="galeria-infantil.html">Fotos</a> 
+                </div>
+              </div>
+              
+
+              <div class="louvor">
+                <hr><h2>Reuniões nas casas</h2>
+                <div class="tgl">
+                  <h3>Se envolva, faça parte de um dos grupos de células.</h3>
+                  <img src="images/celula.jpg" alt="celula">
+                  <p class="botao-para-mais-informacoes"><a href="contato.html">Para mais informações</a></p>
+                  <a href="">Fotos</a>
+                </div>
+              </div>
+
+              <div class="louvor">
+                <hr><h2>Cantina Bethlehem</h2>
+                <div class="tgl">
+                  <p>Venha fazer um lanchinho</p>
+                  <a href="">Fotos</a>
+                </div>
+              </div>
+            </div>
+            <aside class="sidebar-2">
+              <h2>Notícias</h2>
+              <div>
+                <p>Carreata pra Jesus, venha participar, será um "esquenta" para a MARCHA PRA JESUS! <a href="images/carreata.jpg"> <p>Ver...</p></a></p><br><br>
+
+                <p>AULAS DE CANTO INFANTIL E ADULTO, maiores informações com Elaine Kuiaski<p><a href="contato.html">Entre em contato</a></p></p><br><br>
+
+                <p>QUER FAZER PARTE DA FAMÍLIA CHAVE DE DAVI? Fale com Luiz e tire todas as suas dúvidas sobre a igreja e seus princípios.<p><a href="contato.html">Entre em contato</a></p>
+
+              </div>
+            </aside>
+
+
+          </div>
+        </div>    
       </div>  
     </main>
 
@@ -83,7 +174,24 @@
 
 
 
+      <script type="text/javascript"> 
+      jQuery.fn.toggleText = function(a,b) {
+      return   this.html(this.html().replace(new RegExp("("+a+"|"+b+")"),function(x){return(x==a)?b:a;}));
+      }
 
+      $(document).ready(function(){
+      $('.tgl').before('<span style="cursor:pointer; font-size: 30px; color: #243b7c;"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span>');
+      $('.tgl').css('display', 'none')
+      $('span', '#box-toggle').click(function() {
+      $(this).next().slideToggle('slow')
+      .siblings('.tgl:visible').slideToggle('fast');
+      
+      $(this).toggleText('Revelar','Esconder')
+      .siblings('span').next('.tgl:visible').prev()
+      .toggleText('Revelar','Esconder')
+      });
+      })
+      </script>
       <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/wow/dist/wow.min.js"></script>
     <script>

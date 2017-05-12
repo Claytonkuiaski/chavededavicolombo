@@ -6,6 +6,7 @@ main
 			margin-top: 20px
 			+breakpoint($tablet)
 				text-align: center
+				font-size: 40px
 		h3 
 			color: $preto
 			text-align: justify
@@ -45,6 +46,19 @@ main
 					margin: 0 auto
 					margin-top: 100px
 					float: none
+		.foto-antiga
+			img 
+				+img-responsive
+				margin: 0 auto
+				margin-left: 20px
+				float: right
+				width: 500px	
+				+breakpoint($tablet)
+					width: 100%
+					float: none
+					margin-left: 0
+					margin-top: 30px
+					margin-bottom: 30px	
 		.foto-pastores 
 			img 
 				width: 450px

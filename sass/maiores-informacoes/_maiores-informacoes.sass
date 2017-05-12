@@ -1,0 +1,41 @@
+main 
+	.maiores-informacoes
+		text-align: center
+		margin-top: 30px
+		margin-bottom: 100px
+		h2 
+			font-size: 20px
+			+breakpoint($tablet)
+				font-size: 25px
+	.formulario-informacao	
+		+make-sm-column(8)	
+		form 
+			h3 
+				font-size: 18px
+				+breakpoint($tablet)
+					font-size: 30px
+			margin-bottom: 100px
+			input,  
+				width: 100%
+				height: 35px
+				margin-bottom: 25px	
+				
+			textarea 
+				width: 100%	
+			.botao 
+				width: 80px	
+				margin-top: 10px	
+				+breakpoint($tablet)
+					font-size: 30px
+					width: 100px
+					height: 50px
+	.interrogacao
+		+make-sm-column(4)
+		img 
+			+img-responsive
+			margin: 0 auto
+			margin-top: 50px
+			margin-bottom: 150px
+			+breakpoint($celubot)
+				width: 300px
+

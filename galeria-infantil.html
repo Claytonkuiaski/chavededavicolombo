@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Chave de Davi Colombo</title>
+  <link rel="stylesheet" href="css/galeria-fotos/galeria-fotos.css">
+  <link rel="stylesheet" href="css/plugins.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
+  </head>
+  <body>
+  <div class="galeria-infantil">
+    <div class="container">
+      <div class="fotos-infantil">
+        <div><img src="images/fotos-infantil/foto-infantil (1).jpg" alt="Foto-infantil"></div>
+        <div><img src="images/fotos-infantil/foto-infantil (2).jpg" alt="Foto-infantil"></div>
+        <div><img src="images/fotos-infantil/foto-infantil (3).jpg" alt="Foto-infantil"></div>
+        <div><img src="images/fotos-infantil/foto-infantil (4).jpg" alt="Foto-infantil"></div>
+        <div><img src="images/fotos-infantil/foto-infantil (5).jpg" alt="Foto-infantil"></div>
+        <div><img src="images/fotos-infantil/foto-infantil (6).jpg" alt="Foto-infantil"></div>
+        <div><img src="images/fotos-infantil/foto-infantil (7).jpg" alt="Foto-infantil"></div>
+        <div><img src="images/fotos-infantil/foto-infantil (9).jpg" alt="Foto-infantil"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.fotos-infantil').slick({
+         dots: false,
+         infinite: true,
+         speed: 500,
+         fade: true,
+         cssEase: 'linear'
+      });
+    });
+  </script>
+
+  </body>
+</html>

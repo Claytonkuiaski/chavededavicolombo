@@ -95,6 +95,8 @@ main
 			+make-sm-column(12)
 			+breakpoint($tablet)
 				text-align: center
+				h2 	
+					font-size: 40px
 			margin-top: 50px
 			.noticia-1,
 			.noticia-2,
@@ -112,24 +114,27 @@ main
 				img 
 					float: left
 					width: 200px
+					height: 200px
 					padding-right: 10px
 					+breakpoint($tablet)
 						+img-responsive
 						margin: 0 auto
 						float: none
 						width: 250px
+						height: 250px
 					+breakpoint($celubot)
-						width: 300px	
+						width: 300px
+						height: 300px	
 						padding: 0					
 				h3 
 					color: $azul-escuro
 					margin-top: 30px
 					+breakpoint($tablet)
-						font-size: 30px	
+						font-size: 40px	
 				h4
 					color: $preto	
 					+breakpoint($tablet)
-						font-size: 20px
+						font-size: 30px
 				h5 
 					margin-top: 30px
 					margin-bottom: 90px
@@ -174,6 +179,9 @@ main
 					margin-top: -120px
 					margin-bottom: 150px
 					width: 220px
+			h2 
+				+breakpoint($tablet)
+					font-size: 40px		
 			h3
 				.familia
 					margin-top: 20px
@@ -181,9 +189,23 @@ main
 				color: $preto
 				i 
 					color: $azul-escuro
+				+breakpoint($tablet)
+					font-size: 30px	
 			.hrfinal	
 				margin-bottom: 150px
 				margin-top: 50px
+		.formulario-index
+			+make-sm-column(12)
+			text-align: center
+			label 
+				+breakpoint($tablet)
+					font-size: 30px
+			input 
+				+breakpoint($tablet)
+					margin-bottom: 10px
+					font-size: 30px	
+			.botao
+				margin-bottom: 50px			
 		
 
 			
