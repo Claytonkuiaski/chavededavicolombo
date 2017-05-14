@@ -5,6 +5,8 @@ footer
 		border-top: solid 5px $mostarda
 		+breakpoint($tablet)
 			height: 880px	
+		+breakpoint($celubot)
+			height: 990px	
 		.rodape1
 			+make-sm-column(4)
 			margin-top: 30px
@@ -12,12 +14,12 @@ footer
 				+make-sm-column(12)
 				text-align: center
 			h2 
-				white-space: nowrap
+				text-align: center
 				font-family: Open sans
 				color: $branco
 				margin-bottom: 40px
 				+breakpoint($tablet)
-					margin-top: 80px
+					margin-top: 100px
 					font-size: 35px
 		.rodape2
 			font-family: Open sans
@@ -35,7 +37,9 @@ footer
 					+img-responsive
 					float: none
 					margin: 0 auto
-					margin-top: -420px
+					margin-top: -500px
+				+breakpoint($celubot)
+					margin-top: -510px	
 			h2 
 				margin-top: 130px
 				font-size: 20px

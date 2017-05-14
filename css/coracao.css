@@ -1,0 +1,23 @@
+
+
+
+@-webkit-keyframes coracao {
+    0% {
+        -webkit-transform:scale(1);
+    }
+    90% {
+        -webkit-transform:scale(1.1);
+    }
+    
+    
+    100% {
+        -webkit-transform:scale(1.2);
+    }
+
+}
+.logo {
+
+
+
+    -webkit-animation: coracao 0.5s linear infinite alternate;
+}

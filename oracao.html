@@ -2,10 +2,14 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Chave de Davi Colombo</title>
+  <meta name="description" content="Faça seu pedido de oração à igreja Chave de Davi Colombo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comunidade Cristã Chave de Davi Colombo - Pedido de Oração</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favi.ico">
   <link rel="stylesheet" href="css/geral.css">
   <link rel="stylesheet" href="css/plugins.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/coracao.css">
   <script src="js/script.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
 </head>
@@ -24,13 +28,11 @@
     <header>
       <div class="container">
         <div class="contato-header">
-          <i class="fa fa-envelope" aria-hidden="true"><a>E-mail: contato@chavededavicolombo.com.br</a></i>
-          <i class="fa fa-phone-square" aria-hidden="true"><a>Telefone: (41) 3333-1234</a></i>
+          <i class="fa fa-envelope wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1.5s" aria-hidden="true"><a>E-mail: contato@chavededavicolombo.com.br</a></i>
+          <i class="fa fa-phone-square wow bounceInRight" data-wow-duration="1s" data-wow-delay="1.7s" aria-hidden="true"><a>Telefone: (41) 3663-3819</a></i>
         </div>
-
-        <div class="logo"><img src="images/chave.png" alt=""></div>
-     
-        <div class="menu">
+        <div class="logo"><img src="images/chave.png" alt="logotipo"></div>    
+        <div class="menu wow fadeInDown" data-wow-duration="1s" data-wow-delay="3s">
           <ul>
             <li class="menu-home"><a href="index.html">Home</a></li>
             <li><a href="historia.html">História</a></li>
@@ -43,24 +45,23 @@
         <div class="toggle">
           <a href="#"><i class="fa fa-bars"></i></a>
         </div>
-        <div class="chave-colombo">
+        <div class="chave-colombo wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
           <h1>Chave de Davi Colombo</h1>
         </div>
         <div class="data">
-         <i class="fa fa-calendar" aria-hidden="true"><span><script> EscreveData(); </script><span/></i> 
+         <i class="fa fa-calendar wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s" aria-hidden="true"><span><script> EscreveData(); </script><span/></i> 
         </div>
       </div>
     </header>
-    
     <main>
       <div class="oracao">
         <div class="container">
-          <form class="formulario-1"method="post" action="oracao.php">
-            <label>Nome</label><br>
-            <input type="text" name="nome" placeholder="" size="30"><br><br><br>
+          <form class="formulario-1"method="post" action="formulario-oracao.php">
+            <label class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.5s">Nome</label><br>
+            <input class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="2s" type="text" name="nome" placeholder="" size="30"><br><br><br>
             
-            <label>Pedido de Oração</label><br>
-            <textarea class="textarea"name="mensagem" cols="60" rows="8"></textarea><br><br>
+            <label class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.5s">Pedido de Oração</label><br>
+            <textarea class="textarea wow bounceInRight" data-wow-duration="1s" data-wow-delay="2s" name="mensagem" cols="60" rows="8"></textarea><br><br>
             
             <input class="botao" type="submit" value="enviar"><br><br>                        
           </form>
@@ -73,34 +74,27 @@
         </div>
       </div>
     </main>
-
     <footer>
       <div class="rodape">
         <div class="container">
           <div class="rodape1"> 
-            <h2><i class="fa fa-facebook-square" aria-hidden="true"></i> Siga-nos no Facebook</h2>
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FdeveloperClayton%2F&tabs&width=340&height=154&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            <h2 class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="0s"><i class="fa fa-facebook-square wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s" aria-hidden="true"></i> Siga-nos no Facebook</h2>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fchavecolombo&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
           </div>
           <div class="rodape2">
-            <img src="images/chave.png" alt="">
+            <img class="wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0s"src="images/chave.png" alt="logotipo-rodape">
             <h2>Comunidade Cristã <br>Chave de Davi Colombo</h2>
             <h3>Rua Gustavo Nass, 38<br>Roça Grande - Colombo - PR</h3>
             <h3><i class="fa fa-envelope" aria-hidden="true"></i> E-mail: contato@chavededavicolombo.com.br</h3>
-            <h3><i class="fa fa-phone-square" aria-hidden="true"></i> Telefone: (41) 3333-1234</h3> 
+            <h3><i class="fa fa-phone-square" aria-hidden="true"></i> Telefone: (41) 3663-3819</h3> 
             <h4>&copy;2017 Chave de Davi Colombo. Todos os direitos reservados. <br>Desenvolvido por <a href="">Friendship</a></h4>     
           </div>
-        </div>       
+        </div>    
       </div>
     </footer>
   </div>
 
-
-
-
-
-
-
-      <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/wow/dist/wow.min.js"></script>
     <script>
       $(function(){       
@@ -122,15 +116,7 @@
       singleItem:true,
       autoPlay: true,
       pagination: true
-      
- 
-      // "singleItem:true" is a shortcut for:
-      // items : 1, 
-      // itemsDesktop : true,
-      // itemsDesktopSmall : true,
-      // itemsTablet: true,
-      // itemsMobile : true
- 
+
   });
  
 });
