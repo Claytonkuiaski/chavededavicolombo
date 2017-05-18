@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /valida.php
+Disallow: /login.php
